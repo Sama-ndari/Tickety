@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Login</h1>
+                </div>
+                <div class="card-body">
+                      <!-- div for the flashed message  -->
+                    <div class="alert">
+                        <p>I'm a flashed message</p>
+                    </div>
+                    <!-- form for to login -->
+                    <form method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% include 'footer.html' %}
